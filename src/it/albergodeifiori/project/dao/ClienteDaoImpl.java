@@ -89,7 +89,6 @@ public class ClienteDaoImpl implements ClienteDAO {
             ResultSet rs = st.executeQuery(query);
 
             if (rs.next()) {
-                //L' _ va tolto porco dio! se no da errore (data_nascita)
                 return new Cliente(rs.getString("nome"), rs.getString("cognome"), rs.getInt("soggiorno"),rs.getString("numdoc"),rs.getString("data_nascita"),rs.getDouble("conto"));
             } else {
                 return null;
