@@ -95,7 +95,7 @@ public class ClienteDaoImpl implements ClienteDAO {
             }
         }
         catch (SQLException e) {
-            //Nel caso si verifichi l'eccezione
+            //Nel caso si  verifichi l'eccezione
             throw new DAOException(e.getMessage());
         }
     }
