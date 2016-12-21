@@ -46,7 +46,7 @@ public class OrdinazioneDAOImp implements OrdinazioneDAO {
             DAOSettings.closeStatement(st);
         } catch (SQLException e) {
             e.printStackTrace();
-            //COMPLETARE
+
         }
 
         return lista;
@@ -69,7 +69,7 @@ public class OrdinazioneDAOImp implements OrdinazioneDAO {
             DAOSettings.closeStatement(st);
         } catch (SQLException e) {
             e.printStackTrace();
-            //COMPLETARE
+
         }
         return lista;
     }
@@ -92,7 +92,7 @@ public class OrdinazioneDAOImp implements OrdinazioneDAO {
             DAOSettings.closeStatement(st);
         } catch (SQLException e) {
             e.printStackTrace();
-            //COMPLETARE
+
         }
         return lista;
     }
@@ -114,7 +114,6 @@ public class OrdinazioneDAOImp implements OrdinazioneDAO {
                 id = rs.getInt("idordinazioni");
                 return id;
             }else{
-                //*COMPLETARE: lancio eccezione*/
 
             }
             DAOSettings.closeStatement(st);
@@ -178,7 +177,6 @@ public class OrdinazioneDAOImp implements OrdinazioneDAO {
             DAOSettings.closeStatement(st);
         } catch (SQLException e) {
             e.printStackTrace();
-            /*COMPLETARE*/
         }
 
 
@@ -215,7 +213,7 @@ public class OrdinazioneDAOImp implements OrdinazioneDAO {
             DAOSettings.closeStatement(st);
         } catch (SQLException e) {
             e.printStackTrace();
-            //COMPLETARE
+
         }
 
     }
@@ -234,7 +232,7 @@ public class OrdinazioneDAOImp implements OrdinazioneDAO {
             DAOSettings.closeStatement(st);
         } catch (SQLException e) {
             e.printStackTrace();
-            //COMPLETARE
+
         }
     }
 
@@ -253,7 +251,7 @@ public class OrdinazioneDAOImp implements OrdinazioneDAO {
             DAOSettings.closeStatement(st);
         } catch (SQLException e) {
             e.printStackTrace();
-            //COMPLETARE
+
         }
     }
 
@@ -268,7 +266,7 @@ public class OrdinazioneDAOImp implements OrdinazioneDAO {
             DAOSettings.closeStatement(st);
         } catch (SQLException e) {
             e.printStackTrace();
-            //COMPLETARE
+
         }
     }
 
@@ -289,7 +287,7 @@ public class OrdinazioneDAOImp implements OrdinazioneDAO {
             DAOSettings.closeStatement(st);
         } catch (SQLException e) {
             e.printStackTrace();
-            //COMPLETARE
+
         }
 
         return 0;

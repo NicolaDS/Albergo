@@ -88,7 +88,6 @@ public class PersonalePulizieDaoImpl implements PersonalePulizieDAO {
             ResultSet rs = st.executeQuery(query);
 
             if (rs.next()) {
-                //L' _ va tolto porco dio! se no da errore (data_nascita)
                 return new PersonalePulizie(rs.getInt("idaddetto_pulizia"), rs.getString("nome"), rs.getString("cognome"));
             } else {
                 return null;

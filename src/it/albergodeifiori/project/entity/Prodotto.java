@@ -21,7 +21,6 @@ public class Prodotto {
     private int ordineBar;
     private double prezzo;
     private String giorno;
-    // private int quantita;
 
 
     // RELAZIONE TRA Prodotto E Ordinazione

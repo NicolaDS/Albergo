@@ -74,7 +74,7 @@ public class PrenotazioneDAOImp implements PrenotazioneDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            //COMPLETARE
+
         }
 
         return lista;
@@ -96,7 +96,6 @@ public class PrenotazioneDAOImp implements PrenotazioneDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            //COMPLETARE
         }
 
         return lista;
@@ -120,7 +119,7 @@ public class PrenotazioneDAOImp implements PrenotazioneDAO {
             DAOSettings.closeStatement(st);
         } catch (SQLException e) {
             e.printStackTrace();
-            //COMPLETARE
+
         }
 
         return 0;

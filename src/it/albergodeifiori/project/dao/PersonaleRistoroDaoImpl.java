@@ -59,7 +59,7 @@ public class PersonaleRistoroDaoImpl implements PersonaleRistoroDAO {
             DAOSettings.closeStatement(st);
         } catch (SQLException e) {
             e.printStackTrace();
-            //COMPLETARE
+
         }
 
 
@@ -91,7 +91,7 @@ public class PersonaleRistoroDaoImpl implements PersonaleRistoroDAO {
             ResultSet rs = st.executeQuery(query);
 
             if (rs.next()) {
-                //L' _ va tolto porco dio! se no da errore (data_nascita)
+
                 return new PersonaleRistoro(rs.getInt("idpersonale_ristoro"), rs.getString("nome"),
                         rs.getString("cognome"),rs.getString("ruolo"));
             } else {

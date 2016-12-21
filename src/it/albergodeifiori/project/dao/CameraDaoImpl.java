@@ -90,7 +90,7 @@ public class CameraDaoImpl implements CameraDAO {
             ResultSet rs = st.executeQuery(query);
 
             if (rs.next()) {
-                //L' _ va tolto porco dio! se no da errore (data_nascita)
+
                 return new Room(rs.getInt("idcamera"), rs.getString("tipo"), rs.getDouble("prezzo"), rs.getInt("stato"), rs.getInt("accessibilit�"), rs.getInt("addetto_pulizia_idaddetto_pulizia"));
             } else {
                 return null;

@@ -58,7 +58,6 @@ public class ProdottoDaoImpl implements  ProdottoDAO{
             DAOSettings.closeStatement(st);
         } catch (SQLException e) {
             e.printStackTrace();
-            //COMPLETARE
         }
 
 
@@ -83,7 +82,7 @@ public class ProdottoDaoImpl implements  ProdottoDAO{
             ResultSet rs = st.executeQuery(query);
 
             if (rs.next()) {
-                //L' _ va tolto porco dio! se no da errore (data_nascita)
+
                 return new Prodotto(rs.getInt("idprodotto"), rs.getString("nome"), rs.getInt("bar"), rs.getDouble("prezzo"), rs.getString("giorno_settimana"));
             } else {
                 return null;
